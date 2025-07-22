@@ -44,4 +44,11 @@ a:hover {
     width: 200px;
     height: 150px;
     object-fit: cover;
+    transition: transform 0.3s cubic-bezier(.4,2,.6,1), box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.12);
+    box-shadow: 0 6px 24px rgba(0,0,0,0.18);
 }
