@@ -32,9 +32,10 @@ a:hover {
 }
 
 .image-gallery {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
+    justify-items: center;
     margin: 30px 0;
 }
 
