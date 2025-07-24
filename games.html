@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Simple Dice Game</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 2rem;
+      background-color: #f0f0f0;
+      text-align: center;
+    }
+    h1 {
+      color: #333;
+    }
+    #dice-result {
+      font-size: 4rem;
+      margin: 2rem 0;
+    }
+    button {
+      font-size: 1.5rem;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 0.3rem;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <h1>Simple Dice Roll Game</h1>
+  <div id="dice-result">🎲</div>
+  <button id="roll-btn">Roll Dice</button>
+
+  <script>
+    const diceResult = document.getElementById('dice-result');
+    const rollBtn = document.getElementById('roll-btn');
+
+    rollBtn.addEventListener('click', () => {
+      const roll = Math.floor(Math.random() * 6) + 1;
+      diceResult.textContent = roll;
+    });
+  </script>
+</body>
+</html>
